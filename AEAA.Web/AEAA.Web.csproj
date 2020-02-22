@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e40c319f-01e3-48b9-8efc-722f3022fe99</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerfileContext>..\AEAA</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AEAA.infrastructure\AEAA.Infrastructure.csproj" />
+    <ProjectReference Include="..\AEAA.Models\AEAA.Models.csproj" />
+    <ProjectReference Include="..\AEAA.Services\AEAA.Services.csproj" />
+    <ProjectReference Include="..\AEAA.Utilities\AEAA.Utilities.csproj" />
+  </ItemGroup>
+
+
+
+</Project>
